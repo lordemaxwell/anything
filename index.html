@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>权力与进步: 科技与繁荣的千年辩证</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+
+        header {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 1rem 0;
+            text-align: center;
+            border-bottom: #7f8c8d 3px solid;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        
+        header p {
+            font-size: 1.1rem;
+            color: #bdc3c7;
+        }
+
+        section {
+            background: #fff;
+            margin: 20px 0;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #e74c3c;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .timeline, .card-grid {
+            position: relative;
+            padding: 20px 0;
+        }
+
+        .timeline-item, .card {
+            background: #ecf0f1;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            border-left: 5px solid #3498db;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .card {
+             border-left: 5px solid #2ecc71;
+        }
+
+        .timeline-item:hover, .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+        }
+
+        .timeline-item h3, .card h3 {
+            margin-top: 0;
+            color: #2980b9;
+        }
+        
+        .card h3 {
+            color: #27ae60;
+        }
+
+        .timeline-item.warning, .card.warning {
+            border-left-color: #e74c3c;
+        }
+
+        .timeline-item.warning h3, .card.warning h3 {
+            color: #c0392b;
+        }
+        
+        .timeline-item p, .card p {
+            margin-bottom: 0;
+        }
+
+        .interactive-question {
+            background: #e74c3c;
+            color: #fff;
+            padding: 25px;
+            text-align: center;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+        
+        .interactive-question h3 {
+            margin-top: 0;
+            color: #fff;
+        }
+
+        .btn-group button {
+            background: #fff;
+            color: #e74c3c;
+            border: 1px solid #fff;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        .btn-group button:hover {
+            background: #ecf0f1;
+            color: #c0392b;
+        }
+        
+        .hidden-answer {
+            display: none;
+            background: #f9f9f9;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 5px;
+            text-align: left;
+            color: #333;
+        }
+
+        .quote {
+            font-style: italic;
+            color: #7f8c8d;
+            padding: 15px;
+            border-left: 4px solid #bdc3c7;
+            margin: 20px 0;
+            background: #f8f9fa;
+        }
+        
+        .vision-section {
+            background: #34495e;
+            color: #ecf0f1;
+        }
+        
+        .vision-section h2 {
+            color: #ecf0f1;
+            border-bottom-color: #1abc9c;
+        }
+        
+        .policy-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .policy-list li {
+            background: #4a627a;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+        }
+        
+        .policy-list li:hover {
+            background: #5b7894;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            background: #2c3e50;
+            color: #bdc3c7;
+            font-size: 0.9rem;
+        }
+        
+        .cite {
+            font-size: 0.75em;
+            color: #95a5a6;
+            vertical-align: super;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>权力与进步</h1>
+            <p>科技变革与共享繁荣之间的千年辩证 <span class="cite">[cite: 1]</span></p>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <section id="intro">
+            <h2>抵抗终将徒劳无功?</h2>
+            <p>我们常常认为，科技进步自然会带来所有人的共享繁荣。 <span class="cite">[cite: 1]</span> 但历史告诉我们，这并非必然。 <span class="cite">[cite: 1]</span> 技术的方向和社会收益的分配，往往掌握在少数精英手中。 <span class="cite">[cite: 1]</span> 真正的【共享繁荣】需要我们主动争取，而非被动等待。 <span class="cite">[cite: 1]</span></p>
+            <div class="quote">
+                "巨大灾难源于伟大愿景。而愿景又基于过去的成功。" <span class="cite">[cite: 1]</span>
+                <p>— 苏伊士运河与巴拿马运河的教训 <span class="cite">[cite: 1]</span></p>
+            </div>
+            <p>那么，是什么因素决定了新技术究竟是增加劳工薪酬，还是加剧不平等？我们又要如何引导技术，走向更美好的未来？ <span class="cite">[cite: 1]</span></p>
+        </section>
+
+        <section id="history">
+            <h2>关键时刻：历史的回响</h2>
+            <p>回顾历史，科技进步的成果并非总是普惠大众。点击下方卡片，了解更多：</p>
+            <div class="timeline">
+                <div class="timeline-item warning">
+                    <h3>中世纪 & 现代初期</h3>
+                    <p>农业技术改良，但近九成的农民几乎没得到好处。 <span class="cite">[cite: 1]</span> 船只设计进步推动贸易，却也让非洲人被奴役。 <span class="cite">[cite: 1]</span></p>
+                </div>
+                <div class="timeline-item warning">
+                    <h3>英国工业革命</h3>
+                    <p>纺织工厂为少数人创造巨大财富，劳工却面临工时延长、工作恶劣、寿命缩短、工资减少的困境。 <span class="cite">[cite: 1]</span> 劳工缺乏组织和政治权力，权力严重失衡。 <span class="cite">[cite: 1]</span></p>
+                </div>
+                 <div class="timeline-item">
+                    <h3>中产阶级的革命</h3>
+                    <p>直到劳工掌握了足够的政治和社会力量，情况才得以好转。 <span class="cite">[cite: 1]</span> 主权在民和个人主义思想，形塑了社会变革。 <span class="cite">[cite: 1]</span></p>
+                </div>
+                <div class="timeline-item warning">
+                    <h3>19世纪末 & 20世纪</h3>
+                    <p>化肥的发明，却也催生了化学武器。 <span class="cite">[cite: 1]</span> 福特虽然尝试结合机器与培训创造新工作，但也有圆形监狱式的监控。 <span class="cite">[cite: 1]</span></p>
+                </div>
+                 <div class="timeline-item">
+                    <h3>二战后几十年</h3>
+                    <p>实现了共享繁荣，得益于创造新工作的技术方向和让劳工共享收益的制度架构。 <span class="cite">[cite: 1]</span></p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="myths">
+            <h2>“生产力便车”与自动化的“骗局”</h2>
+            <p>一种理论认为，生产力提升会自动提高薪资，让所有人受益。 <span class="cite">[cite: 1]</span> 但现实并非如此。</p>
+            <div class="card warning">
+                <h3>自动化的“骗局”</h3>
+                <p>自动化虽能提升 *平均* 生产力，但未必增加（甚至降低）劳工的 *边际* 生产力。 <span class="cite">[cite: 1]</span> 如果收益有限，就几乎不创造新工作。 <span class="cite">[cite: 1]</span> 例如超市自助结账，只是把工作转移给了顾客。 <span class="cite">[cite: 1]</span></p>
+            </div>
+             <div class="card">
+                <h3>真正的目标</h3>
+                <p>技术研发应提高劳工的边际生产力，而非只想着自动化、裁员或加强监控。 <span class="cite">[cite: 1]</span></p>
+            </div>
+            <p>说服的力量在其中扮演关键角色。 <span class="cite">[cite: 1]</span> 拥有更大权力者，更容易让符合其利益的观点成为众人共同的愿景。 <span class="cite">[cite: 1]</span></p>
+        </section>
+
+        <section id="digital-age">
+            <h2>数位伤害：现代的普罗米修斯？</h2>
+            <p>信息技术飞速发展，但许多未受大学教育的人被抛在后面，实质收入下滑。 <span class="cite">[cite: 1]</span></p>
+            <div class="card-grid">
+                <div class="card warning">
+                    <h3>监控与控制</h3>
+                    <p>AI目前的发展方向加剧不平等，削弱大众权力。 <span class="cite">[cite: 1]</span> 现代版的圆形监狱：劳工被自动化系统监控管理。 <span class="cite">[cite: 1]</span> 数字工具成为监控、收集个人数据（习惯、通讯、开支、喜好）的利器。 <span class="cite">[cite: 1]</span></p>
+                </div>
+                <div class="card warning">
+                    <h3>信息与民主</h3>
+                    <p>社交媒体算法成为传播错误信息的工具。 <span class="cite: 1]</span> 群众的政治论述被操纵和收割。 <span class="cite: 1]</span> 民主面临威胁。 <span class="cite">[cite: 1]</span></p>
+                </div>
+                 <div class="card warning">
+                    <h3>AI的误区</h3>
+                    <p>AI大幅侧重自动化，承诺失败，但“减少劳工需求”却成功了。 <span class="cite">[cite: 1]</span> 追求“等同人类”而非“辅助人类”，迎合企业削减成本的动机。 <span class="cite">[cite: 1]</span></p>
+                </div>
+            </div>
+             <div class="quote">
+                "人类不该认为选择科技这条路就能让所有人收益，这是以大多数一般民众为代价，而让一小撮精英人士财富与权力大增。" <span class="cite">[cite: 1]</span>
+            </div>
+        </section>
+        
+        <div class="interactive-question">
+            <h3>你认为当前AI的发展方向？</h3>
+            <div class="btn-group">
+                <button onclick="showAnswer('ans1')">利大于弊</button>
+                <button onclick="showAnswer('ans2')">弊大于利</button>
+                <button onclick="showAnswer('ans3')">需要引导</button>
+            </div>
+            <div id="ans1" class="hidden-answer">
+                <p><strong>观点：</strong> AI将带来前所未有的繁荣与进步。<br><strong>书中警示：</strong> 当前AI发展似乎正加剧不平等，削弱大众权力。 <span class="cite">[cite: 1]</span> 我们需要警惕过度自信和自私的思维。 <span class="cite">[cite: 1]</span></p>
+            </div>
+            <div id="ans2" class="hidden-answer">
+                <p><strong>观点：</strong> AI的风险巨大，可能导致大规模失业和社会动荡。<br><strong>书中警示：</strong> 证据表明AI目前方向确实令人担忧，尤其是对低技术劳工和民主制度。 <span class="cite">[cite: 1]</span> 但技术本身并非问题，关键在于其发展方向和使用方式。 <span class="cite">[cite: 1]</span></p>
+            </div>
+             <div id="ans3" class="hidden-answer">
+                <p><strong>观点：</strong> AI潜力巨大，但必须被正确引导才能实现共享繁荣。<br><strong>书中观点：</strong> 这正是核心论点！我们需要制衡的力量和更广泛的声音，让技术重新导向，辅助人类、赋权公民。 <span class="cite">[cite: 1]</span></p>
+            </div>
+        </div>
+
+        <section id="solutions" class="vision-section">
+            <h2>让科技重新导向：走向共享繁荣</h2>
+            <p>历史表明，我们可以改变技术的方向。 <span class="cite">[cite: 1]</span> 进步主义运动提供了关键公式：改变叙事、培养制衡力量、提出政策方案。 <span class="cite">[cite: 1]</span> 我们需要：</p>
+             <ul>
+                <li>让数字科技成为人类的辅助，而非替代。 <span class="cite">[cite: 1]</span></li>
+                <li>改变叙事观点及价值规范。 <span class="cite">[cite: 1]</span></li>
+                <li>培养制衡力量（如劳工组织）。 <span class="cite">[cite: 1]</span></li>
+                <li>提出具体的政策解决方案。 <span class="cite">[cite: 1]</span></li>
+            </ul>
+            <h3>具体行动方向：</h3>
+             <ul class="policy-list">
+                <li>投资员工，提升生产效率与创造新任务。 <span class="cite">[cite: 1]</span></li>
+                <li>拆分大型科技公司，促进竞争与创新。 <span class="cite">[cite: 1]</span></li>
+                <li>进行税务改革，鼓励有益的创新。 <span class="cite">[cite: 1]</span></li>
+                <li>运用市场奖励机制让科技重新导向。 <span class="cite">[cite: 1]</span></li>
+                <li>保护隐私与数据所有权。 <span class="cite">[cite: 1]</span></li>
+                <li>改革数字广告，减少监控和操纵。 <span class="cite">[cite: 1]</span></li>
+                <li>财富重分配与加强社会安全网。 <span class="cite">[cite: 1]</span></li>
+                <li>改革教育与学术界，培养新思维。 <span class="cite">[cite: 1]</span></li>
+            </ul>
+            <p>政府应引领科技研发，鼓励那些更能辅助劳工、更有益于公民赋权的技术。 <span class="cite">[cite: 1]</span> 唯有如此，我们才能真正走向共享繁荣。 <span class="cite">[cite: 1]</span></p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>本页面内容基于《权力与进步: 科技变革与共享繁荣之间的千年辩证》一书的摘要信息生成。 <span class="cite">[cite: 1]</span></p>
+    </footer>
+
+    <script>
+        function showAnswer(id) {
+            // Hide all answers first
+            document.querySelectorAll('.hidden-answer').forEach(function(el) {
+                el.style.display = 'none';
+            });
+            // Show the selected answer
+            document.getElementById(id).style.display = 'block';
+        }
+
+        // Add hover/click interactions for timeline/cards (optional)
+        document.querySelectorAll('.timeline-item, .card').forEach(item => {
+            item.addEventListener('click', () => {
+                // Could expand to show more details, or link somewhere
+                console.log('Clicked on:', item.querySelector('h3').textContent);
+            });
+        });
+    </script>
+
+</body>
+</html>
